@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave settings</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="p-3 mb-2 bg-danger text-white">
+    <div class="container">
+        <h3>Leave settings</h3>
+        <div>
+            <h2>Annual</h2>
+            <form class="form" action="/submit-form" method="post">
+                <h5>Days</h5>
+                <div class="days">
+                    <input type="number" name="annualDays" class="border border-primary">   
+                    <button type="submit">Edit</button>
+                </div>
+                <h5>Carry forward</h5>
+                <div class="cf">
+                    <input type="radio" value="Yes" id="carryForwardYes" name="annaulCarryForward">
+                    <label for="carryForwardYes">Yes</label>
+                    <input type="radio" value="No" id="carryForwardNo" name="annaulCarryForward">
+                    <label for="carryForwardNo">No</label>
+                    <div class="container">
+                        <div class="CF">
+                            <div class="input-group">
+                                <span class="input-group-text">Max</span>
+                                <textarea id="maxCarryForward" name="maxCarryForward" class="formControl form-control"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Edit</button>
+                    </div>
+                </div>
+                <h5>Earned Leave</h5>
+                <div class="EL">
+                    <input type="radio" value="Yes" id="earnedLeaveYes" name="annaulEarnedLeave">
+                    <label for="earnedLeaveYes">Yes</label>
+                    <input type="radio" value="No" id="earnedLeaveNo" name="annaulEarnedLeave">
+                    <label for="earnedLeaveNo">No</label>
+                    <button type="submit">Edit</button>
+                </div>
+                <br>
+                <h5>Custom policy</h5>
+                <hr>
+                <table class="table" id="policyTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>Days</th>
+                        <th>Assigned</th>
+                    </tr>
+                    <tr>
+                        <td>5 Year Service</td>
+                        <td>5</td>
+                        <td><b>Jhon Doe</b></td>
+                    </tr>
+                </table>
+                
+                <h5>Sick</h5>
+                <div class="days">
+                    <input type="number" name="sickDays" class="border border-primary">   
+                </div>
+                
+                <h5>Hospitalisation</h5>
+                <div class="days">
+                    <input type="number" name="HospitalisationDays" class="border border-primary">   
+                </div>
+                <h5>Custom policy</h5>
+                <hr>
+                <table class="table" id="policyTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>Days</th>
+                        <th>Assigned</th>
+                    </tr>
+                    <tr>
+                        <td>5 Year Service</td>
+                        <td>5</td>
+                        <td><b>Jhon Doe</b></td>
+                    </tr>
+                </table>
+                
+                <h5>Maternity</h5>
+                <h3>Assigned to female only</h3>
+                <div class="days">
+                    <input type="number" name="MaternityDays" class="border border-primary">   
+                </div>
+                
+                <h5>Paternity</h5>
+                <h3> Assigned to male only</h3>
+                <div class="days">
+                    <input type="number" name="PaternityDays" class="border border-primary">   
+                </div>
+            
+            
+            <h2>LOP</h2>
+                <h5>Days</h5>
+                <div class="days">
+                    <input type="number" name="LOPDays" class="border border-primary">   
+                    <button type="submit">Edit</button>
+                </div>
+                <h5>Carry forward</h5>
+                <div class="cf">
+                    <input type="radio" value="Yes" id="carryForwardYes" name="LOPcarryForward">
+                    <label for="carryForwardYes">Yes</label>
+                    <input type="radio" value="No" id="carryForwardNo" name="LOPcarryForward">
+                    <label for="carryForwardNo">No</label>
+                    <div class="container">
+                        <div class="CF">
+                            <div class="input-group">
+                                <span class="input-group-text">Max</span>
+                                <textarea id="maxCarryForward" name="LOPmaxCarryForward" class="formControl form-control"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Edit</button>
+                    </div>
+                </div>
+                <h5>Earned Leave</h5>
+                <div class="EL">
+                    <input type="radio" value="Yes" id="earnedLeaveYes" name="LOPearnedLeave">
+                    <label for="earnedLeaveYes">Yes</label>
+                    <input type="radio" value="No" id="earnedLeaveNo" name="LOPearnedLeave">
+                    <label for="earnedLeaveNo">No</label>
+                    <button type="submit">Edit</button>
+                </div>
+                <br>
+                <h5>Custom policy</h5>
+                <hr>
+                <table class="table" id="policyTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>Days</th>
+                        <th>Assigned</th>
+                    </tr>
+                    <tr>
+                        <td>5 Year Service</td>
+                        <td>5</td>
+                        <td><b>Jhon Doe</b></td>
+                    </tr>
+                </table>
+                            <button type="submit">submit</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
